@@ -3,6 +3,7 @@ const READY_AMOUNT : i32 = 6;
 
 fn main() {
     let (mut missiles, ready) : (i32, i32) = (STARTING_MISSILES, READY_AMOUNT);
+    let test : String = "Test".to_string();
 
     println!("Firing {} of my {} missiles...", ready, missiles);
 
