@@ -4,6 +4,15 @@ fn main() {
     let coords : (f32, f32) = (6.3, 15.0);
 
     print_distance_x_y(coords.0, coords.1);
+    //print_distance_tuple(coords);
+}
+
+fn print_difference(x: f32, y: f32) {
+    println!("Difference between {} and {} is {}", x, y, (x - y).abs());
+}
+
+fn print_array(a: [f32; 2]) {
+    println!("The coordinates are ({}, {})", a[0], a[1]);
 }
 
 fn print_distance_x_y(x: f32, y: f32) {
