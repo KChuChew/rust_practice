@@ -3,8 +3,12 @@
 fn main() {
     let coords : (f32, f32) = (6.3, 15.0);
 
-    print_distance_x_y(coords.0, coords.1);
+    //print_distance_x_y(coords.0, coords.1);
     //print_distance_tuple(coords);
+    
+    let coords_arr : [f32; 2] = [coords.0, coords.1];
+
+    print_array(coords_arr);
 }
 
 fn print_difference(x: f32, y: f32) {
