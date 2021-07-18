@@ -17,7 +17,14 @@ fn main() {
     
     pluralize_string(& mut arg);
     println!("I have many {} ", arg);
-    
+
+    let ref1 = & arg;
+    let ref2 = & arg;
+    let mut ref3 = & mut arg;
+    ref3.push_str("asdf");
+    println!("ref3 is {}", ref3);
+    println!("arg {}", arg);
+
     consume_string(arg);
 
     println!("Result of adding 420 and 215 = {}", add_two_ints_by_reference(&420, &215));
